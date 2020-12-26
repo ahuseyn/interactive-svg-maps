@@ -105,8 +105,8 @@ function changeMap(random) {
   countryName.innerHTML = details[0][2];
 
   // Load new map
-  map.data = `/maps/${selectedValue}`;
-  downloadLink.href = `/maps/${selectedValue}`;
+  map.data = `maps/${selectedValue}`;
+  downloadLink.href = `maps/${selectedValue}`;
 
   // Re-init map on map load
   map.onload = function () {
