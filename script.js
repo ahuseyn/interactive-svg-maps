@@ -57,7 +57,7 @@ window.onload = function () {
   var changeSelector = document.getElementById("mapChange");
 
   // Get JSON file containing map list
-  getData("/mapList.json").then(function (res) {
+  getData("mapList.json").then(function (res) {
     mapList = res;
     res.map(function (item) {
       var option = document.createElement("option");
